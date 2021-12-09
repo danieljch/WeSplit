@@ -65,6 +65,7 @@ struct ContentView: View {
                 //Challenge 2 total amount
                 Section{
                     Text(totalAmount , format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .foregroundColor(tipPercentage != 0 ? .black : .red)
                 }header: {
                     Text("Total Amount")
                 }
