@@ -52,7 +52,8 @@ struct ContentView: View {
                         ForEach(0..<101, id: \.self) {
                             Text($0, format: .percent)
                         }
-                    }// Challenge 3 whitout .pickerStyle(.segmented)
+                    }
+                    // Challenge 3 whitout .pickerStyle(.segmented)
                     }header: {
                         Text("How much tip do you want to leave?")
                     }
@@ -62,7 +63,7 @@ struct ContentView: View {
                 }header: {
                     Text("Amount per Person")
                 }
-                //Challenge 2 total amount
+                //Challenge 2 total amount done
                 Section{
                     Text(totalAmount , format: .currency(code: Locale.current.currencyCode ?? "USD"))
                 }header: {
